@@ -24,15 +24,12 @@ function recurse(arr, n) {
   }
   if (arr[n] % 3 === 0 && arr[n] % 5) {
     console.log("FizzBuzz!");
-    return recurse(arr, n + 1);
   }
   if (arr[n] % 5 === 0) {
     console.log("Buzz!");
-    return recurse(arr, n + 1);
   }
   if (arr[n] % 3 === 0) {
     console.log("Fizz!");
-    return recurse(arr, n + 1);
   }
   console.log(arr[n]);
   return recurse(arr, n + 1);
